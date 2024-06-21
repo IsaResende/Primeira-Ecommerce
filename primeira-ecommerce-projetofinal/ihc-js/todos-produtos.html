@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANCIE STORE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: 'Gregonia';
+            src: url('fontes/Gregonia.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Classy';
+            src: url('fontes/Classy.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'ClassyVogue';
+            src: url('fontes/ClassyVogue.ttf') format('truetype');
+        }
+        .navbar-brand {
+            font-family: 'Gregonia', sans-serif;
+            font-size: 3rem; 
+            margin: 0 auto; 
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card-img-top {
+            height: 320px; 
+            object-fit: cover; 
+        }
+        .carousel-item img {
+            height: 600px; 
+            width: 100%; 
+            object-fit: cover; 
+            object-position: center; 
+        }
+        .btn-custom {
+            border: 2px solid black;
+            border-radius: 50px;
+            background-color: white;
+            color: black;
+        }
+        .btn-custom:hover {
+            background-color: black;
+            color: white;
+        }
+        .card-custom {
+            max-width: 300px; 
+            margin: 0 auto; 
+        }
+        .card-title {
+            font-family: 'ClassyVogue';
+        }
+        .text-center{
+            font-family: 'ClassyVogue';
+        }
+        .form-control {
+            border-radius: 20px; 
+        }
+        .form-control {
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            border-color: #ced4da;
+            background-color: #f8f9fa; 
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0; 
+            margin-top: 50px; 
+        }
+        .footer a {
+            color: rgb(255, 255, 255); 
+            text-decoration: none; 
+        }
+        .footer a:hover {
+            color: lightgray; 
+        }
+        .margin-top-custom {
+            margin-top: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">FANCIE STORE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="todos-produtos.html">Todos Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bolsas-catalogo.html">Bolsas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="joias-catalogo.html">Jóias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfumes-catalogo.html">Perfumes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promocao.html">PROMOÇÃO</a>
+                </li>
+            </ul>
+            
+          <form class="form-inline my-2 my-lg-0" id="searchForm" action="results.html" method="GET">
+            <input class="form-control mr-sm-2" type="text" id="searchInput" name="query" placeholder="O que está procurando?" aria-label="Pesquisar" style="width: 300px;">
+            <button class="btn btn-custom my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+        
+        
+        </div>
+      </nav>
+      
+    
+    <div class="p-3 mb-5 margin-top-custom">
+        <h1 class="text-center">TODOS PRODUTOS</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="card-deck">
+            <div class="card text-center card-custom">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?q=80&w=1963&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">BOLSAS</h5>
+                <p class="card-text">Cada peça é meticulosamente criada com os mais finos materiais e uma atenção impecável aos detalhes, resultando em obras-primas que exalam elegância e requinte.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="bolsas-catalogo.html">
+                    <button class="btn btn-custom">CONFERIR</button>
+                </a>
+            </div>
+            
+            </div>
+            <div class="card text-center card-custom">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1600721391689-2564bb8055de?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">JÓIAS</h5>
+                <p class="card-text">Seja para um evento especial ou para o dia-a-dia, nossas joias são projetadas para se destacar, adicionando um toque de sofisticação a cada momento.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="joias-catalogo.html">
+                    <button class="btn btn-custom">CONFERIR</button>
+                </a>
+              </div>
+            </div>
+            <div class="card text-center card-custom">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">PERFUMES</h5>
+                <p class="card-text">De notas florais delicadas a acordes amadeirados envolventes, nossa coleção oferece uma variedade de fragrâncias para cada ocasião e personalidade.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="perfumes-catalogo.html">
+                    <button class="btn btn-custom">CONFERIR</button>
+                </a>
+              </div>
+            </div>
+          </div>
+    </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfR24+PDIqMqvraO8yGn" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaVx8i4i1MKb0T1p6TZF6AmJgF9J6b6MCsm" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted">© 2024 FANCIE STORE. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="sobre.html">Sobre Nós</a> | <a href="contato.html">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

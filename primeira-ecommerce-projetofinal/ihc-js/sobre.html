@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANCIE STORE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: 'Gregonia';
+            src: url('fontes/Gregonia.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Classy';
+            src: url('fontes/Classy.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'ClassyVogue';
+            src: url('fontes/ClassyVogue.ttf') format('truetype');
+        }
+        .navbar-brand {
+            font-family: 'Gregonia', sans-serif;
+            font-size: 3rem; 
+            margin: 0 auto; 
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card-img-top {
+            height: 320px; 
+            object-fit: cover; 
+        }
+        .carousel-item img {
+            height: 600px; 
+            width: 100%; 
+            object-fit: cover; 
+            object-position: center; 
+        }
+        .btn-custom {
+            border: 2px solid black;
+            border-radius: 50px;
+            background-color: white;
+            color: black;
+        }
+        .btn-custom:hover {
+            background-color: black;
+            color: white;
+        }
+        .card-custom {
+            max-width: 300px; 
+            margin: 0 auto; 
+        }
+        .float-right {
+            font-family: 'ClassyVogue';
+        }
+        .text-center{
+            font-family: 'ClassyVogue';
+        }
+        .form-control {
+            border-radius: 20px; 
+}
+        .form-control {
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            border-color: #ced4da; 
+            background-color: #f8f9fa; 
+}
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0; 
+            margin-top: 50px; 
+        }
+        .footer a {
+            color: rgb(255, 255, 255); 
+            text-decoration: none; 
+        }
+        .footer a:hover {
+            color: lightgray; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">FANCIE STORE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="todos-produtos.html">Todos Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bolsas-catalogo.html">Bolsas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="joias-catalogo.html">Jóias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfumes-catalogo.html">Perfumes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promocao.html">PROMOÇÃO</a>
+                </li>
+            </ul>
+          <form class="form-inline my-2 my-lg-0" id="searchForm" action="results.html" method="GET">
+            <input class="form-control mr-sm-2" type="text" id="searchInput" name="query" placeholder="O que está procurando?" aria-label="Pesquisar" style="width: 300px;">
+            <button class="btn btn-custom my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+        
+        
+        </div>
+      </nav>
+      <div class="container mt-5">
+   
+    </div>
+    
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://img.freepik.com/premium-photo/full-length-vertical-portrait-smiling-blonde-businesswoman-casual-clothes-standing-office-confident-looking-camera-startup-team-discussing-project_482921-10699.jpg" class="img-fluid float-left" alt="Imagem" style="width: 100%; max-width: 400px;">
+            </div>
+            <div class="col-md-6">
+                <div class="float-right">
+                    <h2>Sobre Nós</h2>
+                    <p>Há mais de cinco décadas, uma aura de sofisticação e excelência nasceu em Brasília, Brasil, com a fundação da Fancie Store. Desde então, temos sido os guardiões do luxo nacional, criando bolsas, joias e perfumes que transcendem o ordinário e encantam os corações dos mais exigentes conhecedores de moda em todo o mundo.
+    
+                        Na Fancie Store, cada produto é uma obra-prima, meticulosamente elaborada para refletir não apenas a beleza, mas também a autenticidade da nossa cultura brasileira. Do couro luxuoso das nossas bolsas aos metais preciosos das nossas joias e às fragrâncias sedutoras dos nossos perfumes, cada detalhe é uma expressão do nosso compromisso inabalável com a qualidade e a perfeição.
+                        
+                        Além de oferecer produtos excepcionais, também nos dedicamos a promover práticas sustentáveis e éticas em todas as áreas da nossa operação. Desde a origem responsável dos materiais até o apoio às comunidades locais, cada decisão que tomamos é impulsionada pelo nosso compromisso de fazer a diferença no mundo, enquanto nos esforçamos para criar um legado duradouro de beleza e integridade.
+                        
+                        Ao celebrarmos mais de meio século de história, renovamos nosso compromisso de continuar a ser uma referência de luxo e elegância, não apenas no Brasil, mas em todo o mundo. Convidamos você a se juntar a nós nesta jornada de descoberta e encanto, enquanto continuamos a definir os padrões de excelência que nos tornaram a escolha preferida dos amantes do luxo em todo o mundo. Bem-vindo à Fancie Store, onde a beleza se encontra com a tradição, e o luxo se torna uma experiência inesquecível.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted">© 2024 FANCIE STORE. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="sobre.html">Sobre Nós</a> | <a href="contato.html">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    

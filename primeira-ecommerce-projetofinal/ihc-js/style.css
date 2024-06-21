@@ -1,0 +1,38 @@
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  @font-face {
+    font-family: 'Gregonia';
+    src: url('fontes/Gregonia.ttf') format('truetype');
+}
+
+.navbar-brand {
+    font-family: 'Gregonia', sans-serif;
+}
+.card-img-top {
+    height: 300px; /* Defina a altura desejada para as imagens dos cards */
+    object-fit: cover; /* Garante que a imagem preencha completamente o espaço designado */
+}
+.carousel-item img {
+    height: 600px; /* Defina a altura desejada para as imagens do carrossel */
+    width: 100%; /* Ajusta a largura para preencher o contêiner do carrossel */
+    object-fit: cover; /* Faz a imagem cobrir o contêiner sem distorção */
+    object-position: center; /* Centraliza a imagem no contêiner */
+}
+.form-control {
+    border-radius: 20px; /* ou qualquer valor que você preferir */
+}
+.form-control {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    border-color: #ced4da; /* Cor da borda */
+    background-color: #f8f9fa; /* Cor de fundo */
+}
+

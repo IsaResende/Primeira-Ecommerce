@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: 'Gregonia';
+            src: url('fontes/Gregonia.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Classy';
+            src: url('fontes/Classy.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'ClassyVogue';
+            src: url('fontes/ClassyVogue.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Waylimo';
+            src: url('fontes/Waylimo.ttf') format('truetype');
+        }
+        .navbar-brand {
+            font-family: 'Gregonia', sans-serif;
+            font-size: 3rem;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card-img-top {
+            height: 320px;
+            object-fit: cover;
+        }
+        .btn-custom {
+            border: 2px solid black;
+            border-radius: 50px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+        .btn-custom:hover {
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+        .btn-comprar {
+            background-color: rgb(47, 168, 47);
+            font-size: 30px;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            width: 350px;
+}
+
+        .card-custom {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .card-title, .text-center, .text-classy {
+            font-family: 'ClassyVogue', sans-serif;
+        }
+        .form-control {
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-color: #ced4da;
+            background-color: #f8f9fa;
+            font-family: 'ClassyVogue', sans-serif;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: lightgray;
+        }
+        .preco {
+            font-size: 20px;
+        }
+        .text-center-preco {
+            font-size: 34px;
+            font-family: 'ClassyVogue';
+            text-align: center;
+        }
+        .img-thumbnail {
+            cursor: pointer;
+            margin-bottom: 10px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .large-image {
+            width: 100%;
+            height: auto;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left; 
+            gap: 10px; 
+            width: 200px; 
+            height: auto; 
+        }
+
+        .main-image-container {
+            display: flex;
+        }
+        .main-image-container .col-md-6:first-child {
+            flex: 2;
+        }
+        .main-image-container .col-md-6:last-child {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .preco-custom {
+            color: rgb(221, 17, 17); 
+            font-size: 20px; 
+            text-decoration: line-through;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .preco-real{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        
+        
+
+    </style>
+    <script>
+        function updateMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">FANCIE STORE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="todos-produtos.html">Todos Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bolsas-catalogo.html">Bolsas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="joias-catalogo.html">Jóias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfumes-catalogo.html">Perfumes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promocao.html">PROMOÇÃO</a>
+                </li>
+            </ul>
+          <form class="form-inline my-2 my-lg-0" id="searchForm" action="results.html" method="GET">
+            <input class="form-control mr-sm-2" type="text" id="searchInput" name="query" placeholder="O que está procurando?" aria-label="Pesquisar" style="width: 300px;">
+            <button class="btn btn-custom my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+        </div>
+    </nav>
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <img id="mainImage" src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E92913/INSTANCE_CASTANHARIAS_DEO_COLONIA_E92913_SEGREDINHO.jpg" class="img-fluid large-image" alt="Imagem do Produto">
+            </div>
+            <div class="col-md-4">
+                <div class="image-gallery">
+                    <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E92913/INSTANCE_CASTANHARIAS_DEO_COLONIA_E92913_SEGREDINHO.jpg" class="img-thumbnail" alt="Imagem 1" onclick="updateMainImage('https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E92913/INSTANCE_CASTANHARIAS_DEO_COLONIA_E92913_SEGREDINHO.jpg')">
+                    <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E92913/colonia-instance_1.jpg" class="img-thumbnail" alt="Imagem 2" onclick="updateMainImage('https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/E92913/colonia-instance_1.jpg')">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-center">Colônia Desodorante Instance 50ml</h2>
+                <p class="text-center">A Colônia Desodorante Instance é o novo oriental frutal que veio para dar potência à feminilidade tão presente no seu dia a dia. Uma combinação de notas florais, frutas suculentas e a cremosidade da baunilha, envolvida pelo conforto do sândalo, finalizam esta criação única e feminina.</p>
+                <p class="text-center-preco preco-custom">R$ 190,00</p>
+                <p class="text-center-preco preco-real">R$ 99,99</p>
+                <form>
+                    <div class="form-group">
+                        <label for="quantidade" class="text-classy">Quantidade:</label>
+                        <input type="number" class="form-control" id="quantidade" min="1" value="1" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-custom mr-2">Adicionar ao Carrinho</button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-custom btn-lg btn-comprar">COMPRAR</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+       
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted text-classy">© 2024 FANCIE STORE. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="sobre.html" class="text-classy">Sobre Nós</a> | <a href="contato.html" class="text-classy">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfR24+PDIqMqvraO8yGn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykv+2+9J3UJ46jBk0WLaVx8i4i1MKb0T1p6TZF6AmJgF9J6b6MCsm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
